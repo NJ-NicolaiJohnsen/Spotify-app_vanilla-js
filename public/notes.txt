@@ -1,0 +1,22 @@
+server.js
+    featured playlists
+    Search
+    liked songs -- v1/me/tracks
+    
+
+Search bar
+    Filters functionality
+        Popup menu to select filters
+        display selected filers to the left of the element
+            Filters selected:   font-weight: bold;
+                                font-family: 'Roboto Condensed'
+                                font-size: 16px;
+
+Favorites section fully adjustable for screen size
+    play btn and title -> needs to be obviously clickable
+    play btn no resizing.
+
+
+Tracks of the Week
+    artist picture should be zoomed in
+    Play button needs to show if it is playing

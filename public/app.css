@@ -1,0 +1,24 @@
+:root {
+    --spotify-green: #82D938;
+    --background: #000;
+    --font-color: #ffffff;
+    --font-color-shaded: #FFFFFFB2;
+    --shade-background: #000b;
+    --my-end-width: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: regular;
+    background-color: var(--background);
+    
+}

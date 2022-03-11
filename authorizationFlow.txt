@@ -1,0 +1,47 @@
+Scopes are found at: https://developer.spotify.com/documentation/general/guides/authorization/scopes/
+
+Endpoints are found at: https://developer.spotify.com/documentation/web-api/reference/#/
+
+In order to have access to the spotify API, you need an access token.
+You can get an access token by exchanging and authorization code for it.
+The authorization code is determines the scope of the application, meaning
+what the application is allowed to do and what not to do.
+
+1. Login and retrive authorization code --> GET "https://accounts.spotify.com/authorize?client_id=" + client_id + "&response_type=code&redirect_uri=" +redirect_uri+ "&scope=" + scope
+
+2. Authorize code and request access token --> POST https://accounts.spotify.com/api/token with the body:  `code=${code}&redirect_uri=${redirect_uri}&grant_type=authorization_code`  
+
+3. Use the access token to make requests to Spotify API
+
+--------------------------------------!!-------------------------------------
+
+1. Login and retrive authorization code
+    Make a GET request to the URL: https://accounts.spotify.com/authorize?
+    With the required query string parameters:
+        response_type           Set to "code"
+        client_id               Found in my spotify application Dashboard.
+        redirect_uri            Congruent with a URI listed in the settings of 
+                                my Dashboard: http://localhost:3000/callback.
+        scope                   Space seperated list of scopes.
+returns an authorization code if the request if OK
+
+
+2. Authorize code and request access token
+    Make a POST request to the URL: accounts.spotify.com/api/token
+    With the header parameters:
+        "Authorization": "Basic " + (client_id:client_secret) encoded in base64
+        "Content-Type": "application/x-www-form-urlencoded",
+    And the body in a form query string, because it is x-www-form-urlencoded
+        `   
+            code={code}&
+            redirect_uri={redirect_uri}&
+            grant_type=authorization_code
+        `
+returns an access token if the request is OK.
+
+
+3. Make a request to the url api.spotify.com/v1/{endpoint}
+Header parameters: 
+    "Authorization": "Bearer " + access_token
+    "Content-Type: "application/json"
+The body of a request should be in JSON format, not a query string.

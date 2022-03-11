@@ -1,0 +1,36 @@
+<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: gray;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_48" data-name="Rectangle 48" class="cls-1" width="50" height="50" rx="8" transform="translate(0 10)"/>
+  <g id="Group_5" data-name="Group 5" transform="translate(-3233.5 3.09)">
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M0,13,13,0" transform="translate(3241.5 26.91)"/>
+    <line id="Line_16" data-name="Line 16" class="cls-2" x2="9" y2="9" transform="translate(3254.5 26.91)"/>
+    <line id="Line_17" data-name="Line 17" class="cls-2" y1="12" x2="12" transform="translate(3263.5 23.91)"/>
+  </g>
+  <g id="Ellipse_2" data-name="Ellipse 2" class="cls-3" transform="translate(40)">
+    <circle class="cls-4" cx="10.5" cy="10.5" r="10.5"/>
+    <circle class="cls-5" cx="10.5" cy="10.5" r="9"/>
+  </g>
+</svg>
